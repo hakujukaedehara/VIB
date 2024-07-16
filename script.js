@@ -56,7 +56,7 @@ var teamMembers = [
 ];
 
 function searchTeam() {
-    var searchTerm = document.getElementById("searchInput").value.trim().toLoWerCase();
+    var searchTerm = document.getElementById("searchInput").value.trim().LowerCase();
     var resultDiv = document.getElementById("result");
     resultDiv.innerHTML = "";
     if (searchTerm === "") {
@@ -65,7 +65,7 @@ function searchTeam() {
     }
 
     var foundMembers = teamMembers.filter(function(member) {
-        return member.toLoWerCase().includes(searchTerm);
+        return member.toLowerCase().includes(searchTerm);
     });
 
     if (foundMembers.length === 0) {
