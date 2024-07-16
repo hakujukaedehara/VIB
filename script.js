@@ -56,7 +56,7 @@ var teamMembers = [
 ];
 
 function searchTeam() {
-    var searchTerm = document.getElementById("searchInput").value.trim().LowerCase();
+    var searchTerm = document.getElementById("searchInput").value.trim().toLowerCase();
     var resultDiv = document.getElementById("result");
     resultDiv.innerHTML = "";
     if (searchTerm === "") {
